@@ -1,4 +1,4 @@
 .modoClaro {
-  background-color: var(--bg-claro);
-  color: var(--tx-claro);
+  background-color: var(--bg-color-claro);
+  color: var(--tx-color-claro);
 }
