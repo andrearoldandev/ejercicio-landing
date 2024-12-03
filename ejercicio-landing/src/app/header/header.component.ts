@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  esModoOscuro: boolean = false;
 
+  cambiarModo() {
+    this.esModoOscuro = !this.esModoOscuro;
+  }
 }
