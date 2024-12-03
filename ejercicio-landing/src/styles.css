@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-color-oscuro: #261e35;
+  --tx-color-oscuro: #c7b2ed;
+  --border-color-oscuro: #261e35;
+
+  --bg-color-claro: #c7b2ed;
+  --tx-color-claro: #261e35;
+  --border-color-claro: #c7b2ed;
+
+  --fuente-grande: 40px;
+  --fuente-pequenia: 20px;
+
+  --margin: 2rem;
+  --padding: 0.8rem;
+  --border-radio: 20px;
+}
