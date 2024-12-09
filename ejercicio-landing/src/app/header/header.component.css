@@ -1,5 +1,5 @@
 .modo-claro {
-  background-color: var(--bg-color-claro);
+  background-color: var(--bg-color-claro) !important;
   color: var(--tx-color-claro) !important;
 }
 
@@ -9,7 +9,7 @@
 }
 
 
-img {
+.icono {
   width: 24px;
   height: 24px;
 }
@@ -20,6 +20,11 @@ img {
 
 .fuente-grande {
   font-size: var(--fuente-grande);
+}
+
+.btn {
+  background-color: var(--bg-color-oscuro);
+  border: var(--borde-oscuro);
 }
 
 

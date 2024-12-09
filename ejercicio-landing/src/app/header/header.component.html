@@ -10,7 +10,7 @@
         [class.modo-claro]="!isDarkMode"
         [class.modo-oscuro]="isDarkMode"
         [class.fuente-pequenia]="!isFuentePequenia"
-            [class.fuente-grande]="isFuentePequenia"
+        [class.fuente-grande]="isFuentePequenia"
         href="#"
         >PochiNetflix</a
       >
@@ -25,13 +25,16 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="d-flex collapse navbar-collapse justify-content-end align-items-center" id="navbarNavAltMarkup">
+      <div
+        class="d-flex collapse navbar-collapse justify-content-end align-items-center"
+        id="navbarNavAltMarkup"
+      >
         <div
-          class="navbar-nav "
+          class="navbar-nav"
           [class.modo-claro]="!isDarkMode"
           [class.modo-oscuro]="isDarkMode"
           [class.fuente-pequenia]="!isFuentePequenia"
-            [class.fuente-grande]="isFuentePequenia"
+          [class.fuente-grande]="isFuentePequenia"
         >
           <a
             class="nav-link active"
@@ -70,21 +73,120 @@
             [class.fuente-grande]="isFuentePequenia"
             >CONTACTO</a
           >
-          <button [class.modo-claro]="!isDarkMode"
-            [class.modo-oscuro]="isDarkMode" class="rounded"><img
-            class="d-flex align-items-center"
-            (click)="toggleTheme()"
-            [src]="svgSrcOscuro" [class.modo-claro]="!isDarkMode"
+          <button
+            [class.modo-claro]="!isDarkMode"
             [class.modo-oscuro]="isDarkMode"
-            alt="svg de una luna"
-          /></button>
-          <button (click)="cambiarFuente()" [class.fuente-pequenia]="!isFuentePequenia"
-            [class.fuente-grande]="isFuentePequenia" [class.modo-claro]="!isDarkMode"
-            [class.modo-oscuro]="isDarkMode" class="rounded">Aa</button>
+            class="rounded btn"
+          >
+            <img
+              class="d-flex align-items-center icono"
+              (click)="toggleTheme()"
+              [src]="svgSrcOscuro"
+              [class.modo-claro]="!isDarkMode"
+              [class.modo-oscuro]="isDarkMode"
+              alt="svg de una luna"
+            />
+          </button>
+          <button
+            (click)="cambiarFuente()"
+            [class.fuente-pequenia]="!isFuentePequenia"
+            [class.fuente-grande]="isFuentePequenia"
+            [class.modo-oscuro]="!isDarkMode"
+            [class.modo-claro]="isDarkMode"
+            class="rounded btn"
+          >
+            Aa
+          </button>
         </div>
       </div>
     </div>
   </nav>
+  <div class="container d-flex justify-content-center text-align-center">
+    <h1
+      class="justify-content-center text-align-center"
+      [class.modo-claro]="!isDarkMode"
+      [class.modo-oscuro]="isDarkMode"
+      [class.fuente-pequenia]="!isFuentePequenia"
+      [class.fuente-grande]="isFuentePequenia"
+    >
+      Últimos estrenos
+    </h1>
+  </div>
+  <div class="container d-flex justify-content-center gap-4 mt-3">
+    <div class="card bg-dark text-white">
+      <img src="assets/img/interstellar.jpg" class="card-img" alt="..." />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Interstellar</h5>
+      </div>
+    </div>
+    <div class="card bg-dark text-white">
+      <img src="assets/img/interstellar.jpg" class="card-img" alt="..." />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+    <div class="card bg-dark text-white">
+      <img src="assets/img/interstellar.jpg" class="card-img" alt="..." />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+    <div class="card bg-dark text-white">
+      <img src="assets/img/interstellar.jpg" class="card-img" alt="..." />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4" [class.modo-claro]="!isDarkMode"
+      [class.modo-oscuro]="isDarkMode"
+      [class.fuente-pequenia]="!isFuentePequenia"
+      [class.fuente-grande]="isFuentePequenia">
+
+      <div class="mb-3">
+        <label for="titulo" class="form-label">Título</label>
+        <input
+          type="text"
+          class="form-control"
+          id="titulo"
+          aria-describedby="titulo de la película"
+          placeholder="Escribe el título de la película"
+          [(ngModel)]="tituloPeli"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="genero" class="form-label">Género</label>
+        <input
+          type="text"
+          class="form-control"
+          id="genero"
+          placeholder="Escribe el género de la película"
+          [(ngModel)]="generoPeli"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">HD</label>
+      </div>
+      <button type="submit" class="btn btn-primary" [class.modo-claro]="!isDarkMode"
+      [class.modo-claro]="isDarkMode"
+      [class.fuente-pequenia]="!isFuentePequenia"
+      [class.fuente-grande]="isFuentePequenia">Buscar</button>
+
+  </div>
+
+  <div class="container mt-4 d-flex justify-content-center" [class.modo-claro]="!isDarkMode"
+      [class.modo-oscuro]="isDarkMode">
+    <h1 [class.fuente-pequenia]="!isFuentePequenia"
+      [class.fuente-grande]="isFuentePequenia">Resultados de la búsqueda</h1>
+
+  </div>
+  <div class="container" [class.modo-claro]="!isDarkMode"
+      [class.modo-oscuro]="isDarkMode">
+    <p [class.fuente-pequenia]="!isFuentePequenia"
+      [class.fuente-grande]="isFuentePequenia">Titulo de la película: {{ tituloPeli }}</p>
+    <p [class.fuente-pequenia]="!isFuentePequenia"
+      [class.fuente-grande]="isFuentePequenia">Genero de la película: {{ generoPeli }}</p>
+  </div>
 </header>
-
-
