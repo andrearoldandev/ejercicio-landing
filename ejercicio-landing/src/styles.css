@@ -15,3 +15,33 @@
   --padding: 0.8rem;
   --border-radio: 20px;
 }
+
+.modo-claro {
+  background-color: var(--bg-color-claro) !important;
+  color: var(--tx-color-claro) !important;
+}
+
+.modo-oscuro {
+  background-color: var(--bg-color-oscuro);
+  color: var(--tx-color-oscuro) !important;
+}
+
+
+.icono {
+  width: 24px;
+  height: 24px;
+}
+
+.fuente-pequenia {
+  font-size: var(--fuente-pequenia);
+}
+
+.fuente-grande {
+  font-size: var(--fuente-grande);
+}
+
+.btn {
+  background-color: var(--bg-color-oscuro);
+  border: var(--borde-oscuro);
+}
+
