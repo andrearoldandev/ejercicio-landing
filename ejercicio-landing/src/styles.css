@@ -2,11 +2,11 @@
 :root {
   --bg-color-oscuro: #261e35;
   --tx-color-oscuro: #c7b2ed;
-  --border-color-oscuro: #261e35;
+  --border-color-oscuro: #c7b2ed;
 
   --bg-color-claro: #c7b2ed;
   --tx-color-claro: #261e35;
-  --border-color-claro: #c7b2ed;
+  --border-color-claro: #261e35;
 
   --fuente-grande: 40px;
   --fuente-pequenia: 20px;
