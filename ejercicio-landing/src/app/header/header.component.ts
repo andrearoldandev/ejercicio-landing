@@ -8,9 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  esModoOscuro: boolean = false;
+  isDarkMode: boolean = false;
 
-  cambiarModo() {
-    this.esModoOscuro = !this.esModoOscuro;
+  toggleTheme(): void {
+    this.isDarkMode = !this.isDarkMode;
+    document.body.classList.toggle('dark-mode', this.isDarkMode);
+  }
+
+  get themeIcon(): string{
+    return this.isDarkMode ? 'assets/svg/moon.svg' : 'assets/svg/sun.svg';
   }
 }

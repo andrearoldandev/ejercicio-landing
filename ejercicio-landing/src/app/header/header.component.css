@@ -1,4 +1,13 @@
-.modoClaro {
+.modo-claro {
   background-color: var(--bg-color-claro);
+}
+
+.dark-mode .modo-claro{
+  background-color: var(--bg-color-oscuro);
   color: var(--tx-color-claro);
+}
+
+img {
+  width: 24px;
+  height: 24px;
 }
