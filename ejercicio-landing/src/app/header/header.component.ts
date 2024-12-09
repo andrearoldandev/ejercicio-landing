@@ -10,11 +10,18 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   isDarkMode: boolean = false;
   svgSrcOscuro: string = "assets/svg/moon.svg";
-  svgSrcClaro: string = "assets/svg/sun-svg";
+
+  isFuentePequenia: boolean = false;
+  fuentePequenia:string = "var(--fuente-pequenia)";
+
 
   toggleTheme(): void {
     this.isDarkMode = !this.isDarkMode;
-    this.svgSrcOscuro === this.svgSrcOscuro ? this.svgSrcOscuro : this.svgSrcClaro;
+    this.svgSrcOscuro = this.svgSrcOscuro === "assets/svg/moon.svg" ? "assets/svg/sun.svg" : "assets/svg/moon.svg";
+  }
+
+  cambiarFuente() {
+    this.isFuentePequenia = !this.isFuentePequenia;
   }
 
 }

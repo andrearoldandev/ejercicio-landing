@@ -1,19 +1,90 @@
-<header class="container-fluid" [class.modo-claro]="!isDarkMode" [class.modo-oscuro]="isDarkMode">
-  <nav class="navbar navbar-expand-lg" >
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">PochiNetflix</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">INCIO</a>
-        <a class="nav-link" href="#">SOBRE NOSOTROS</a>
-        <a class="nav-link" href="#">PELICULAS</a>
-        <a class="nav-link" href="#">CONTACTO</a>
-        <button (click)="toggleTheme()" aria-label="Cambiar modo"><img [src]="svgSrcOscuro" alt="svg de una luna"></button>
+<header
+  class="container-fluid"
+  [class.modo-claro]="!isDarkMode"
+  [class.modo-oscuro]="isDarkMode"
+>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a
+        class="navbar-brand"
+        [class.modo-claro]="!isDarkMode"
+        [class.modo-oscuro]="isDarkMode"
+        [class.fuente-pequenia]="!isFuentePequenia"
+            [class.fuente-grande]="isFuentePequenia"
+        href="#"
+        >PochiNetflix</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex collapse navbar-collapse justify-content-end align-items-center" id="navbarNavAltMarkup">
+        <div
+          class="navbar-nav "
+          [class.modo-claro]="!isDarkMode"
+          [class.modo-oscuro]="isDarkMode"
+          [class.fuente-pequenia]="!isFuentePequenia"
+            [class.fuente-grande]="isFuentePequenia"
+        >
+          <a
+            class="nav-link active"
+            [class.modo-claro]="!isDarkMode"
+            [class.modo-oscuro]="isDarkMode"
+            aria-current="page"
+            href="#"
+            [class.fuente-pequenia]="!isFuentePequenia"
+            [class.fuente-grande]="isFuentePequenia"
+            >INCIO</a
+          >
+          <a
+            class="nav-link"
+            [class.modo-claro]="!isDarkMode"
+            [class.modo-oscuro]="isDarkMode"
+            href="#"
+            [class.fuente-pequenia]="!isFuentePequenia"
+            [class.fuente-grande]="isFuentePequenia"
+            >SOBRE NOSOTROS</a
+          >
+          <a
+            class="nav-link"
+            [class.modo-claro]="!isDarkMode"
+            [class.modo-oscuro]="isDarkMode"
+            href="#"
+            [class.fuente-pequenia]="!isFuentePequenia"
+            [class.fuente-grande]="isFuentePequenia"
+            >PELICULAS</a
+          >
+          <a
+            class="nav-link"
+            [class.modo-claro]="!isDarkMode"
+            [class.modo-oscuro]="isDarkMode"
+            href="#"
+            [class.fuente-pequenia]="!isFuentePequenia"
+            [class.fuente-grande]="isFuentePequenia"
+            >CONTACTO</a
+          >
+          <button [class.modo-claro]="!isDarkMode"
+            [class.modo-oscuro]="isDarkMode" class="rounded"><img
+            class="d-flex align-items-center"
+            (click)="toggleTheme()"
+            [src]="svgSrcOscuro" [class.modo-claro]="!isDarkMode"
+            [class.modo-oscuro]="isDarkMode"
+            alt="svg de una luna"
+          /></button>
+          <button (click)="cambiarFuente()" [class.fuente-pequenia]="!isFuentePequenia"
+            [class.fuente-grande]="isFuentePequenia" [class.modo-claro]="!isDarkMode"
+            [class.modo-oscuro]="isDarkMode" class="rounded">Aa</button>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 </header>
+
+

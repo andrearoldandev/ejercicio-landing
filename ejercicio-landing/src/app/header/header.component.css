@@ -1,11 +1,11 @@
 .modo-claro {
   background-color: var(--bg-color-claro);
-  color: var(--tx-color-claro);
+  color: var(--tx-color-claro) !important;
 }
 
 .modo-oscuro {
   background-color: var(--bg-color-oscuro);
-  color: var(--tx-color-oscuro);
+  color: var(--tx-color-oscuro) !important;
 }
 
 
@@ -13,3 +13,13 @@ img {
   width: 24px;
   height: 24px;
 }
+
+.fuente-pequenia {
+  font-size: var(--fuente-pequenia);
+}
+
+.fuente-grande {
+  font-size: var(--fuente-grande);
+}
+
+
