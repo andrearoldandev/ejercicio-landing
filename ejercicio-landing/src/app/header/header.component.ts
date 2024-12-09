@@ -9,13 +9,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   isDarkMode: boolean = false;
+  svgSrcOscuro: string = "assets/svg/moon.svg";
+  svgSrcClaro: string = "assets/svg/sun-svg";
 
   toggleTheme(): void {
     this.isDarkMode = !this.isDarkMode;
-    document.body.classList.toggle('dark-mode', this.isDarkMode);
+    this.svgSrcOscuro === this.svgSrcOscuro ? this.svgSrcOscuro : this.svgSrcClaro;
   }
 
-  get themeIcon(): string{
-    return this.isDarkMode ? 'assets/svg/moon.svg' : 'assets/svg/sun.svg';
-  }
 }

@@ -1,4 +1,4 @@
-<header class="container-fluid modo-claro">
+<header class="container-fluid" [class.modo-claro]="!isDarkMode" [class.modo-oscuro]="isDarkMode">
   <nav class="navbar navbar-expand-lg" >
   <div class="container-fluid">
     <a class="navbar-brand" href="#">PochiNetflix</a>
@@ -11,7 +11,7 @@
         <a class="nav-link" href="#">SOBRE NOSOTROS</a>
         <a class="nav-link" href="#">PELICULAS</a>
         <a class="nav-link" href="#">CONTACTO</a>
-        <button (click)="toggleTheme()" aria-label="Cambiar modo"><img [src]="themeIcon" alt="svg de una luna"></button>
+        <button (click)="toggleTheme()" aria-label="Cambiar modo"><img [src]="svgSrcOscuro" alt="svg de una luna"></button>
       </div>
     </div>
   </div>
