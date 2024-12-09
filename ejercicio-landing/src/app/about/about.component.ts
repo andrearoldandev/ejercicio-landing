@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './about.component.css',
 })
 export class AboutComponent {
-  @Input() user: { name: string; email: string };
+  user: string[] = ["name", "email"];
+  
 }
