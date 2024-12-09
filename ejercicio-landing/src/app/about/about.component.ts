@@ -1,10 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-about', // El nombre que usas en HTML
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css',
+  styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
   @Input() user: { name: string; email: string };
+  // Aquí va la lógica de tu componente
 }
