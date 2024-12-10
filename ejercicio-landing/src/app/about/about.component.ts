@@ -1,10 +1,18 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about',
+  standalone: true,
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css',
+  styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
-  @Input() user: { name: string; email: string };
+  user: string[] = ['name', 'email'];
+  isDarkMode: boolean = false;
+  svgSrcOscuro: string = 'assets/svg/moon.svg';
+
+
+  toggleTheme(): void {
+    this.isDarkMode = !this.isDarkMode;
+    this.svgSrcOscuro = this.svgSrcOscuro === "assets/svg/moon.svg" ? "assets/svg/sun.svg" : "assets/svg/moon.svg";}
 }

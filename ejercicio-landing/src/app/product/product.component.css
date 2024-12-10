@@ -1,0 +1,86 @@
+/* Estilos generales para el contenedor de productos */
+/* Sección de Productos o Servicios (Películas) */
+.product-container {
+  background-color: #e6d1f7;
+  /* Fondo morado muy suave */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-container h2 {
+  color: #6a3e8a;
+}
+
+.product-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-container li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-container li:hover {
+  color: #8b5cf6;
+  /* Cambio de color al pasar el cursor */
+
+
+  .movie-card {
+    background-color: #e6d1f7;
+    /* Fondo morado muy suave */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px auto;
+    width: 200px;
+    /* Reducido el ancho de la card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-img {
+    width: 50%;
+    height: 100px;
+    /* Ajuste el tamaño de la imagen para que se vea más pequeña */
+    object-fit: cover;
+    /* Asegura que la imagen se recorte bien */
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .card-body {
+    padding: 8px;
+  }
+
+  .movie-card h3 {
+    color: #6a3e8a;
+    font-size: 18px;
+    /* Ajusté el tamaño del título */
+  }
+
+  .movie-card p {
+    color: #555;
+    font-size: 14px;
+    /* Ajusté el tamaño de la descripción */
+  }
+
+  /* Efectos de interacción */
+  .movie-card:hover .card-body h3 {
+    color: #8b5cf6;
+    /* Morado intermedio al pasar el cursor */
+  }
+
+  .movie-card:hover p {
+    color: #8b5cf6;
+  }
+}

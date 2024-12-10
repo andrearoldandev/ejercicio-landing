@@ -1,0 +1,47 @@
+/* Estilos para la sección de Contacto */
+.contact-container {
+  background-color: #9b4dca;
+  /* Morado oscuro */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 30px;
+}
+
+.contact-container p {
+  font-size: 18px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.contact-container button {
+  background-color: #6a3e8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-container button:hover {
+  background-color: #4b2a60;
+  /* Morado más oscuro al pasar el cursor */
+}
