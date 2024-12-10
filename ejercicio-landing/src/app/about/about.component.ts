@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent {
-  user: string[] = ['name', 'email'];
-  isDarkMode: boolean = false;
-  svgSrcOscuro: string = 'assets/svg/moon.svg';
+  user: string[] = ["Andrea", "email@ejemplo.com"];
 
-
-  toggleTheme(): void {
-    this.isDarkMode = !this.isDarkMode;
-    this.svgSrcOscuro = this.svgSrcOscuro === "assets/svg/moon.svg" ? "assets/svg/sun.svg" : "assets/svg/moon.svg";}
 }
